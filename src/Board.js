@@ -66,7 +66,7 @@ class Board extends Component {
     // win when every cell is turned off
     // TODO: determine is the game has been won
 
-    this.setState({ board, hasWon });
+    // this.setState({ board, hasWon });
   }
 
 
@@ -74,7 +74,16 @@ class Board extends Component {
 
   render() {
     return (
-      <div>Hi</div>
+      <table className="Board">
+        <tbody>
+          <tr>
+            <Cell isLit={true} />
+            <Cell isLit={true} />
+            <Cell isLit={false} />
+            <Cell isLit={true} />
+          </tr>
+        </tbody>
+      </table>
     )
 
     // if the game is won, just show a winning msg & render nothing else
