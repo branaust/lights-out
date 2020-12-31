@@ -77,6 +77,10 @@ class Board extends Component {
     }
     return (
       <div>
+        <div className="Board-Title">
+          <div class="neon">Lights </div>
+          <div class="flux">Out</div>
+        </div>
         <table className="Board">
           <tbody>
             {tblBoard}
